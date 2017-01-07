@@ -268,8 +268,7 @@ h2.bnr-sub-title
 
 .overlay-detail a i{
    text-align: center;
-   position: absolute;
-   bottom: 25px;
+   position: relative;
    font-size: 38px;
    color: #fff;
 }
