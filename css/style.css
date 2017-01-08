@@ -482,10 +482,8 @@ ul.service-list li i
 }
 #testimonial
 {
-
-		background-color: #002F2F;
-    background-size: cover;
-
+  background-size: cover;
+	background-color: #F3F4F8;
 }
 
 .linkz{
@@ -560,6 +558,9 @@ ul.service-list li i
 Blog
 ************************************
 ***********************************/
+#blog{
+	background-color: #F3F4F8;
+}
 .blog-info h2 {
     text-transform: capitalize;
     font-weight: 600;
