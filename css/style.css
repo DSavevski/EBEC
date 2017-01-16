@@ -136,7 +136,7 @@ HEADER
 .header{
 		background: url('../img/ebec.png') no-repeat fixed;
 		background-size: cover;
-		min-height: 820px;
+		height: auto;
 		position: relative;
 }
 #countdown{
