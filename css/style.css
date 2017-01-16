@@ -131,16 +131,36 @@ HEADER
 	cursor: pointer!important;
 	font-weight: bold;
 }
+
+@media only screen and (min-width: 501px){
 .header{
-    background: url('../img/ebec.jpg') no-repeat fixed;
-    background-size: cover;
-    min-height: 650px;
-    position: relative;
+		background: url('../img/ebec.png') no-repeat fixed;
+		background-size: cover;
+		min-height: 760px;
+		position: relative;
 }
+#countdown{
+	margin-right:45px;
+}
+}
+
+@media only screen and (max-width: 500px){
+	.header{
+	  	background: url('../img/ebec_mobile.png') no-repeat fixed;
+	    background-size: contain;
+	    position: relative;
+			background-color: #ffe6bd;
+	}
+}
+
+.text-today{
+	color: #be9e21;
+}
+
 .bg-color
 {
-    background-color: rgba(0, 0, 0, 0.5);
-    min-height: 650px;
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 760px;
 }
 #main-header
 {
@@ -231,7 +251,7 @@ h2.bnr-sub-title
 {
     font-weight: 300;
 }
-.btn-download, .btn-more, .btn-download:hover, .btn-download:focus, .btn-more:focus
+.btn-download, .btn-more, .btn-download:focus, .btn-more:focus
 {
     text-transform: uppercase;
     margin-top: 50px;
@@ -249,6 +269,11 @@ h2.bnr-sub-title
     transition: all 0.3s;
 }
 
+.btn-download:hover{
+	color: black;
+	font-weight: bold;
+}
+
 
 .btn-download
 {
@@ -258,7 +283,7 @@ h2.bnr-sub-title
 {
     margin-left: 15px;
     border: 1px solid #be9e21;
-    color: #be9e21;
+    color: #fff;
 }
 
 .btn-more:hover {
@@ -266,12 +291,7 @@ h2.bnr-sub-title
     color: #fff;
 }
 
-.overlay-detail a i{
-   text-align: center;
-   position: relative;
-   font-size: 38px;
-   color: #fff;
-}
+
 /***********************************
 ************************************
 features
