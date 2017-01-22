@@ -151,7 +151,17 @@ HEADER
 	    position: relative;
 			background-color: #ffe6bd;
 	}
+	.text-white{
+		color:white!important;
+	}
 }
+
+.flag{
+	height:12px;
+	width:20px;
+	display:inline;
+}
+
 
 .text-today{
 	color: #be9e21;
@@ -504,6 +514,11 @@ ul.service-list li i
 {
   background-size: cover;
 	background-color: #F3F4F8;
+}
+
+.pic-size{
+		height: 150px;
+		width: 150px;
 }
 
 .linkz{

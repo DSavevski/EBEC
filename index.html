@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="LanCheck">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css.map">
   </head>
 
-  <body>
+  <body ng-controller="LanController as lctrl">
 <!--Page starts here -->
     <div class="loader"></div>
     <div id="myDiv">
@@ -42,6 +41,13 @@
                 <li class=""><a href="#blog">Партнери</a></li>
                 <li class=""><a href="#testimonial">Галерија & Recap</a></li>
                 <li class=""><a href="#contact">Контакт</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Јазик</span><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index_en.html" class="text-white"><img src="img/us.svg" class="img-responsive flag" /> Англиски</a></li>
+                    <li><a href="index.html" class="text-white"><img src="img/mk.svg" class="img-responsive flag" /> Македонски</a></li>
+                  </ul>
+              </li>
               </ul>
             </div>
           </div>
@@ -230,26 +236,29 @@
               <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <div class="col-md-12">
-                    <h4>16 ФЕВРУАРИ – ФОРУМСКА РАСПРАВА<br /><small>Место на одржување: конгресна сала на ФЕИТ/МФС</small></h4>
+                    <h4>15 ФЕВРУАРИ – Local event on education<br /><small>Место на одржување: конгресна сала на ФЕИТ/МФС</small></h4>
                     <ul class="list-group">
                       <li class="list-group-item">10:00 - официјално отвoрање</li>
-                      <li class="list-group-item">10:30 - коктел</li>
-                      <li class="list-group-item">11:00 - форумска расправа на тема: <b>„Како до проактивен кадар?"</b></li>
+                      <li class="list-group-item">10:30 - закуска</li>
+                      <li class="list-group-item">11:00 - Форумска расправа на тема: Традиционални наспроти современи методи на предавање – Патот до успешна работна кариера?</b></li>
                     </ul>
                   </div>
 
                   <div class="col-md-6">
-                      <h4>17 ФЕВРУАРИ – CASE STUDY<br /><small>Место на одржување: читална на ФЕИТ/МФС</small></h4>
+                      <h4>16 ФЕВРУАРИ – CASE STUDY во DoXTeam<br /></h4>
                     <ul class="list-group">
                       <li class="list-group-item">Почеток на натпреварот: 10:00 часот</li>
                     </ul>
                   </div>
 
                   <div class="col-md-6">
-                      <h4>18 ФЕВРУАРИ – TEAM DESIGN<br /><small>Место на одржување: читална на ФЕИТ/МФС</small></h4>
+                      <h4>17 ФЕВРУАРИ – TEAM DESIGN и CASE STUDY во ITLabs<br /></h4>
                     <ul class="list-group">
                       <li class="list-group-item">Почеток на натпреварот: 10:00 часот</li>
                     </ul>
+                  </div>
+                  <div class="col-md-12">
+                      <h4>18 ФЕВРУАРИ - Официјално затворање<br /></h4>
                   </div>
                 </div>
               </div>
@@ -374,7 +383,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">Партнери</h2>
+            <h2 class="service-title pad-bt15">Партнери 2016</h2>
             <p class="sub-title pad-bt15">Партнери на European BEST Engineering Competition за 2016-та година</p>
             <hr class="bottom-line">
           </div>
@@ -383,7 +392,7 @@
             <div class="blog-sec">
               <div class="blog-img">
                 <a href="">
-                  <img src="http://placehold.it/350x150" class="img-responsive">
+                  <img src="img/24_vesti.jpg" class="img-responsive pic-size">
                 </a>
               </div>
               <div class="blog-info text-center">
@@ -394,8 +403,8 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="blog-sec">
               <div class="blog-img">
-                <a href="">
-                  <img src="http://placehold.it/350x150" class="img-responsive">
+                <a href="http://www.telma.com.mk">
+                  <img src="img/telma.jpg" class="img-responsive pic-size">
                 </a>
               </div>
               <div class="blog-info text-center">
@@ -406,8 +415,8 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="blog-sec">
               <div class="blog-img">
-                <a href="">
-                  <img src="http://placehold.it/350x150" class="img-responsive">
+                <a href="http://www.mrt.com.mk">
+                  <img src="img/mrt.png" class="img-responsive pic-size">
                 </a>
               </div>
               <div class="blog-info text-center">
@@ -422,7 +431,7 @@
             <div class="blog-sec">
               <div class="blog-img">
                 <a href="">
-                  <img src="http://placehold.it/350x150" class="img-responsive">
+                  <img src="img/coffee_time.png" class="img-responsive pic-size">
                 </a>
               </div>
               <div class="blog-info text-center">
@@ -433,8 +442,8 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="blog-sec">
               <div class="blog-img">
-                <a href="">
-                  <img src="http://placehold.it/350x150" class="img-responsive">
+                <a href="http://www.dobravoda.com.mk">
+                  <img src="img/dobra_voda.png" class="img-responsive pic-size">
                 </a>
               </div>
               <div class="blog-info text-center">
@@ -445,8 +454,44 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="blog-sec">
               <div class="blog-img">
-                <a href="">
-                  <img src="http://placehold.it/350x150" class="img-responsive">
+                <a href="http://www.vitalia.com.mk">
+                  <img src="img/Vitalia_Logo.png" class="img-responsive pic-size">
+                </a>
+              </div>
+              <div class="blog-info text-center">
+                <a href="" class="read-more">Go to website→</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="blog-sec">
+              <div class="blog-img">
+                <a href="http://www.redbull.com">
+                  <img src="img/redbull.jpg" class="img-responsive pic-size">
+                </a>
+              </div>
+              <div class="blog-info text-center">
+                <a href="" class="read-more">Go to website→</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="blog-sec">
+              <div class="blog-img">
+                <a href="http://www.ladna.com.mk">
+                  <img src="img/ladna.jpg" class="img-responsive pic-size">
+                </a>
+              </div>
+              <div class="blog-info text-center">
+                <a href="" class="read-more">Go to website→</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="blog-sec">
+              <div class="blog-img">
+                <a href="http://www.nestle.mk">
+                  <img src="img/nescafe.jpg" class="img-responsive pic-size">
                 </a>
               </div>
               <div class="blog-info text-center">
@@ -456,11 +501,11 @@
           </div>
 
           <h2 class="text-center">Факултети</h2>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="blog-sec">
               <div class="blog-img">
-                <a href="">
-                  <img src="http://placehold.it/350x150" class="img-responsive">
+                <a href="http://www.finki.ukim.mk">
+                  <img src="img/finki-logo.png" class="img-responsive pic-size">
                 </a>
               </div>
               <div class="blog-info text-center">
@@ -468,11 +513,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="blog-sec">
               <div class="blog-img">
                 <a href="">
-                  <img src="http://placehold.it/350x150" class="img-responsive">
+                  <img src="img/ETF-logo.png" class="img-responsive pic-size">
                 </a>
               </div>
               <div class="blog-info text-center">
@@ -480,11 +525,23 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="blog-sec">
               <div class="blog-img">
-                <a href="">
-                  <img src="http://placehold.it/350x150" class="img-responsive">
+                <a href="http://www.mf.ukim.edu.mk">
+                  <img src="img/logo_mfs.png" class="img-responsive pic-size">
+                </a>
+              </div>
+              <div class="blog-info text-center">
+                <a href="" class="read-more">Go to website→</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="blog-sec">
+              <div class="blog-img">
+                <a href="http://www.tmf.ukim.edu.mk">
+                  <img src="img/tmf.png" class="img-responsive pic-size">
                 </a>
               </div>
               <div class="blog-info text-center">
@@ -609,10 +666,15 @@
             <div class="col-md-12 text-center white">
                 <h2 class="service-title pad-bt15">Контакт</h2>
                 <p class="sub-title pad-bt15"><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>Борд на Европски Студенти по Технологија – Скопје, Барака 5, Факултет за Електротехника и Информациски Технологии, Руѓер Бошковиќ бб, Карпош 2, 1000 Скопје, Македонија</p>
+                <ul>
+                  <li class="">Телефон: 02 306 6029</li>
+                  <li class="">E-mail: skopje@best.org.mk</li>
+                  <li>Веб сајт: <a href="http://www.best.org.mk">www.best.org.mk</a></li>
+              </ul>
                 <hr class="bottom-line white-bg">
             </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-offset-2">
                     <img style="height:290px;width:220px;" class="img-responsive thumbnail" src="img/evac.jpg" />
                     <div class="white">
                         <h4>Евгенија Цветановска</h4>
@@ -621,7 +683,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-3 col-xs-offset-2">
                     <img style="height:290px;width:220px;" class="img-responsive thumbnail" src="img/martina.jpg" />
                     <div class="white">
                         <h4>Мартина Папалиска</h4>
@@ -630,20 +692,6 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-header text-center">
-                        <h4>БЕСТ Контакт</h4>
-                      </div>
-                        <div class="panel-body">
-                            <ul class="list-group">
-                              <li class="list-group-item">Телефон: 02 306 6029</li>
-                              <li class="list-group-item">E-mail: skopje@best.org.mk</li>
-                              <li class="list-group-item">Веб сајт: <a href="http://www.best.org.mk">www.best.org.mk</a></li>
-                          </ul>
-                        </div>
-                    </div>
-                </div>
         </div>
     </div>
 </section>
@@ -665,6 +713,8 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/lan.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
