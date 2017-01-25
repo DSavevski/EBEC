@@ -13,6 +13,20 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css.map">
+    <style>
+    @media only screen and (max-width: 500px){
+      .mobile{
+        width: 550px;
+        height: 1150px;
+      }
+    }
+    @media only screen and (min-width: 501px){
+      .pc{
+        width: 1000px;
+        height: 1000px;
+      }
+    }
+    </style>
   </head>
 
   <body>
@@ -41,15 +55,23 @@
         <div class="wrapper">
         <div class="container">
           <div class="row">
+            <div class="col-md-4">
             <div class="banner-info text-center wow fadeIn delay-05s">
               <h1 class="bnr-title">You can sign up for EBEC in</h1>
-              <div style="margin-left:45px;" id="countdown" data-wow-delay=".3s" data-date="Jan 27, 2017 23:59:59"></div>
+              <div id="countdown" data-wow-delay=".3s" data-date="Jan 27, 2017 23:59:59"></div>
             </div>
+          </div>
+          <div class="col-md-8 col-xs-12">
+
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeuhrxYPV2YB2GBLHK1G5FjKFxWWGbTUq-bs53Zs8007aPKRA/viewform?embedded=true" width="60%" height="80%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
           </div>
         </div>
         </div>
       </div>
     </div>
+
+
 
     <footer id="footer">
         <div class="container">
